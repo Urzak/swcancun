@@ -1,7 +1,8 @@
 var gulp = require('gulp'),
     plumber = require('gulp-plumber'),
     rename = require('gulp-rename');
-var autoprefixer = require('gulp-autoprefixer');
+var postcss = require('gulp-postcss');
+var autoprefixer = require('autoprefixer');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin'),
@@ -35,7 +36,7 @@ gulp.task('styles', function(){
         this.emit('end');
     }}))
     .pipe(stylus())
-    .pipe(autoprefixer('last 2 versions'))
+    .pipe(postcss([ autoprefixer({ browsers: ['last 2 versions'] }) ]))
     .pipe(gulp.dest('dist/styles/'))
     .pipe(browserSync.reload({stream:true}))
 });
