@@ -19,6 +19,10 @@ body {
 .navbar-default {
   transition: all 0.4s ease;
 }
+.navbar-nav >li >a {
+  color: #fff;
+  font-weight: 700;
+}
 .navbar-right {
   padding-top: 40px;
 }
@@ -41,7 +45,7 @@ body {
   padding-right: 0 !important;
 }
 .img-home {
-  background-image: url("../images/banner.jpg");
+  background-image: url("../images/chichen.png");
   min-height: 100vh;
 }
 .ab-tes {

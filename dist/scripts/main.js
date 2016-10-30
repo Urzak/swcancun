@@ -83,12 +83,13 @@ $(window).resize(function () {
     }
 });
 /*
-    Navbar Background  ###
+    Navbar Background  ##
 */
 $(window).load(function() {
         var backgrounds = [
-          'url(dist/images/banner.jpg)', 
-          'url(dist/images/banner.jpg)'];
+          'url(dist/images/chichen.png)', 
+          'url(dist/images/arrecifes.png)',
+          'url(dist/images/xcaret.png)'];
         var current = 0;
 
         function nextBackground() {
