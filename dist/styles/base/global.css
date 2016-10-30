@@ -66,6 +66,9 @@ body {
   font-size: 40px;
   color: #fff;
 }
+.text-home span {
+  text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+}
 .owl-carousel {
   padding-right: 50px;
   padding-left: 50px;
@@ -84,4 +87,12 @@ body {
 .btn-orange {
   background-color: #f1582c !important;
   border-color: #f1582c !important;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 4px solid #f1582c !important;
+  margin: 1em 0;
+  padding: 0;
 }

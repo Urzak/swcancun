@@ -93,15 +93,17 @@ $(window).load(function() {
         var current = 0;
 
         function nextBackground() {
-            $('.img-home').fadeOut(1000, function() {
+            /*$('.img-home').fadeOut(1000, function() {
                 $(this)
                     .css('background-image',
                      backgrounds[current = ++current % backgrounds.length]);
                     $('.img-home').fadeIn(1000);
-            })
+            })*/
+            $('.img-home').css('background-image',backgrounds[current = ++current % backgrounds.length]);
+
             setTimeout(nextBackground, 4000);
         }
-        setTimeout(nextBackground, 3000);
+        setTimeout(nextBackground, 4000);
         body.css('background', backgrounds[0]);
 });
 jQuery(document).ready(function($) {
