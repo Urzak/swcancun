@@ -203,24 +203,28 @@ body {
 .navbar-right li >a:hover {
   background-color: transparent !important;
 }
+.navbar-right li >a:focus {
+  background-color: transparent !important;
+}
 .navbar-brand {
   padding: 0 15px !important;
 }
 .footer {
   background-color: #f1582c;
   text-align: center;
+  color: #fff;
 }
 .container-fluid {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
 .img-home {
-  background-color: #000;
+  background-image: url("../images/banner.jpg");
   min-height: 100vh;
 }
 .ab-tes {
-  background-image: url("../images/banner.jpg");
-  min-height: 20vh;
+  background-image: url("../images/supermercado.jpg");
+  min-height: 30vh;
 }
 .parallax-img {
   position: relative;
@@ -233,7 +237,8 @@ body {
   padding-top: 20%;
   text-align: center;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 40px;
+  color: #fff;
 }
 .owl-carousel {
   padding-right: 50px;
@@ -246,6 +251,9 @@ body {
   background-repeat: no-repeat;
   background-position: left center;
   display: block;
+}
+#about {
+  font-size: 25px;
 }
 .btn-orange {
   background-color: #f1582c !important;

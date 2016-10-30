@@ -92,16 +92,15 @@ $(window).load(function() {
         var current = 0;
 
         function nextBackground() {
-            $('.img-home').animate({opacity: 0}, 'slow', function() {
+            $('.img-home').fadeOut(1000, function() {
                 $(this)
-                    .css({'background-image':
-                     backgrounds[current = ++current % backgrounds.length]},
-                     {'background-color':'#000'})
-                    .animate({opacity: 1});
+                    .css('background-image',
+                     backgrounds[current = ++current % backgrounds.length]);
+                    $('.img-home').fadeIn(1000);
             })
-            setTimeout(nextBackground, 3500);
+            setTimeout(nextBackground, 4000);
         }
-        setTimeout(nextBackground, 3500);
+        setTimeout(nextBackground, 3000);
         body.css('background', backgrounds[0]);
 });
 jQuery(document).ready(function($) {
@@ -129,7 +128,7 @@ jQuery(document).ready(function($) {
         // An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
         separator: ",",
         // The delay between the changing of each phrase in milliseconds.
-        speed: 5000,
+        speed: 4000,
         complete: function () {
             // Called after the entrance animation is executed.
         }
