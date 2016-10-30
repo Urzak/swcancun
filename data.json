@@ -1,0 +1,54 @@
+{
+  "productos":[
+    {
+      "codigo":"1",
+      "descripcion":"Cerveza clara Corona light 6 latas de 355 ml c/u",
+      "categoria":"Bebidas",
+      "precio":"59"
+    },
+
+    {
+      "codigo":"8",
+      "descripcion":"Cerveza clara Modelo Especial especial 6 latas de 355 ml c/u",
+      "categoria":"Bebidas",
+      "precio":"64"
+    },
+
+    {
+      "codigo":"2",
+      "descripcion":"Refresco",
+      "categoria":"Bebidas",
+      "precio":"15"
+    },
+    {
+      "codigo":"3",
+      "descripcion":"Sabritas",
+      "categoria":"Alimentos",
+      "precio":"10"
+    },
+    {
+      "codigo":"4",
+      "descripcion":"Pasta dental",
+      "categoria":"Higiene",
+      "precio":"30"
+    },
+    {
+      "codigo":"5",
+      "descripcion":"Servilletas",
+      "categoria":"Limpieza",
+      "precio":"25"
+    },
+    {
+      "codigo":"6",
+      "descripcion":"Bloqueador solar",
+      "categoria":"Salud",
+      "precio":"105"
+    },
+    {
+      "codigo":"7",
+      "descripcion":"Pañales",
+      "categoria":"Bebes",
+      "precio":"150"
+    }
+  ]
+}
