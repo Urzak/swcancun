@@ -85,7 +85,25 @@ $(window).resize(function () {
 /*
     Navbar Background  ###
 */
+$(window).load(function() {
+        var backgrounds = [
+          'url(dist/images/banner.jpg)', 
+          'url(dist/images/banner.jpg)'];
+        var current = 0;
 
+        function nextBackground() {
+            $('.img-home').animate({opacity: 0}, 'slow', function() {
+                $(this)
+                    .css({'background-image':
+                     backgrounds[current = ++current % backgrounds.length]},
+                     {'background-color':'#000'})
+                    .animate({opacity: 1});
+            })
+            setTimeout(nextBackground, 3500);
+        }
+        setTimeout(nextBackground, 3500);
+        body.css('background', backgrounds[0]);
+});
 jQuery(document).ready(function($) {
     $('.owl-carousel').owlCarousel({
         loop: true,
@@ -104,5 +122,16 @@ jQuery(document).ready(function($) {
                 items:4
             }
         }
-    })
+    });
+    $("#js-text").Morphext({
+        // The [in] animation type. Refer to Animate.css for a list of available animations.
+        animation: "fadeIn",
+        // An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
+        separator: ",",
+        // The delay between the changing of each phrase in milliseconds.
+        speed: 5000,
+        complete: function () {
+            // Called after the entrance animation is executed.
+        }
+    });
 });

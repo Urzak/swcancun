@@ -215,7 +215,7 @@ body {
   padding-right: 0 !important;
 }
 .img-home {
-  background-image: url("../images/banner.jpg");
+  background-color: #000;
   min-height: 100vh;
 }
 .ab-tes {
